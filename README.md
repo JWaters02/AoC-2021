@@ -6,7 +6,7 @@ I calculated the average execution time of each part 2 solution (given my own in
 
 Day | Part 1 Time | Part 2 Time | Overall Execution Time (s) | Global Rank
 --- | ----------- | ----------- | -------------------------- | -----------
-Day 1 | 00:13:37 | 00:27:13 | 0.003s | 5960
+[Day 1](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day1.py) | 00:13:37 | 00:27:13 | 0.003s | 5960
 Day 2 |  |  |  | 
 Day 3 |  |  |  | 
 Day 4 |  |  |  | 
