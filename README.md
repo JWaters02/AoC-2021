@@ -2,7 +2,7 @@
 
 Repository for my solutions to Advent of Code 2021. 
 
-I calculated the average execution time of each part 2 solution (given my own inputs) alongside my time completion of puzzles (from 5am UTC start time) and my global rank for them:
+I calculated the overall execution time from each part 1 and part 2 solutions (given my own inputs) alongside my time completion of puzzles (from 5am UTC start time) and my global rank for them:
 
 Day | Part 1 Time | Part 2 Time | Overall Execution Time (s) | Global Rank
 --- | ----------- | ----------- | -------------------------- | -----------
@@ -31,3 +31,7 @@ Day 22 |  |  |  |
 Day 23 |  |  |  | 
 Day 24 |  |  |  | 
 Day 25 |  |  |  | 
+
+## Blueprint Solutions
+### Day 1
+![Day 1](https://github.com/JWaters02/AoC-2021/blob/1fe0359ac5857d86f953a2cc7ce757c69566648c/BP%20Solutions/Day1.png)
