@@ -9,7 +9,7 @@ def main():
 
 def part1(lines):
     horizontalD, depth = 0, 0
-    for _, line in enumerate(lines):
+    for line in lines:
         line.strip("\n")
         instruction, distance = line.split()
         distance = int(distance)
