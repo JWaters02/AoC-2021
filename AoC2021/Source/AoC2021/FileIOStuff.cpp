@@ -23,8 +23,8 @@ TArray<FString> UFileIOStuff::Lines(const FString& Text)
 	while (!Eof)
 	{
 		FString LeftString;
-		Eof = !Temp.Split("\n", &LeftString, &Temp);
-		Result.Add(LeftString);
+		Eof = !Temp.Split("\r\n", &LeftString, &Temp);
+		Result.Add(Eof ? Temp : LeftString);
 	}
 	return Result;
 }
