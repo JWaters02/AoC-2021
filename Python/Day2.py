@@ -4,7 +4,6 @@ import fileinput
 
 def main():
     lines = [line for line in fileinput.input("./Input/Day2.txt")]
-    print(len(lines))
     part1(lines)
     part2(lines)
 
@@ -14,14 +13,12 @@ def part1(lines):
         line.strip("\n")
         instruction, distance = line.split()
         distance = int(distance)
-        print(f"{instruction} {distance} {_}")
         if instruction == "forward":
             horizontalD = horizontalD + distance
         elif instruction == "down":
             depth = depth + distance
         elif instruction == "up":
             depth = depth - distance
-        # print(f"Horizontal: {horizontalD} Depth: {depth}")
     print(f"Part 1: {horizontalD * depth}")
 
 def part2(lines):
