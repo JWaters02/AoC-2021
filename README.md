@@ -8,7 +8,7 @@ Day | Part 1 Time | Part 2 Time | Overall Execution Time (s) | Global Rank
 --- | ----------- | ----------- | -------------------------- | -----------
 [Day 1](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day1.py) | 00:13:37 | 00:27:13 | 0.003 | 5960
 [Day 2](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day2.py) | 00:16:35 | 00:19:02 | 0.002 | 7843
-Day 3 |  |  |  | 
+[Day 3](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day3.py) | 00:28:22 | 00:42:05 | 0.003 | 4294
 Day 4 |  |  |  | 
 Day 5 |  |  |  | 
 Day 6 |  |  |  | 
