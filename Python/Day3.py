@@ -25,7 +25,7 @@ def part1(lines):
 def part2(lines):
     def get_rating(lines, type):
         type_order = []
-        if type == "oxygen":
+        if type == 0:
             type_order = ["1", "0"]
         else:
             type_order = ["0", "1"]
@@ -40,8 +40,7 @@ def part2(lines):
             if len(lines) == 1:
                 return lines[0]
         return lines[0]
-
-    print(int(get_rating(lines, "oxygen"), 2) * int(get_rating(lines, "co2"), 2))
+    print(int(get_rating(lines, 0), 2) * int(get_rating(lines, 1), 2))
 
 if __name__ == "__main__":
     start_time = time.time()
