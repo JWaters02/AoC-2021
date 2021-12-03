@@ -24,19 +24,19 @@ def part1(lines):
 
 def part2(lines):
     def get_rating(lines, type):
-        type_order = []
+        bit_criteria = []
         if type == 0:
-            type_order = ["1", "0"]
+            bit_criteria = ["1", "0"]
         else:
-            type_order = ["0", "1"]
+            bit_criteria = ["0", "1"]
         for i in range(12):
             counter_dict = Counter()
             for line in lines:
                 counter_dict[line[i]] += 1
             if counter_dict["1"] >= counter_dict["0"]:
-                lines = [x for x in lines if x[i] == type_order[0]]
+                lines = [x for x in lines if x[i] == bit_criteria[0]]
             else:
-                lines = [x for x in lines if x[i] == type_order[1]]
+                lines = [x for x in lines if x[i] == bit_criteria[1]]
             if len(lines) == 1:
                 return lines[0]
         return lines[0]
