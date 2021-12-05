@@ -41,7 +41,9 @@ Day 25 |  |  |  |
 There were a few different functions for various processes so I took screenshots of the most important ones. The first screenshot is the main function for parts 1 and 2. I wrote the BP code based off my Python solution.
 ![Day 3 Main](https://github.com/JWaters02/AoC-2021/blob/fca008441a60551cfa25132d53895f3fe55dbb9c/BP%20Solutions/Day3-Main.png)
 ![Day 3 Create Counter](https://github.com/JWaters02/AoC-2021/blob/fca008441a60551cfa25132d53895f3fe55dbb9c/BP%20Solutions/Day3-CreateCounter.png)
+This function above counts the number of 1s and 0s in each column and stores them into a struct.
 ![Day 3 Binary To Decimal](https://github.com/JWaters02/AoC-2021/blob/fca008441a60551cfa25132d53895f3fe55dbb9c/BP%20Solutions/Day3-BinToDec.png)
+This function converts the binary string to a decimal number, since UE does not have a built in function for this.
 ![Day 3 Get Rating](https://github.com/JWaters02/AoC-2021/blob/fca008441a60551cfa25132d53895f3fe55dbb9c/BP%20Solutions/Day3-GetRating.png)
 The above function is effectively the main function for part 2, but since it gets called twice for the oxygen and C02 scrubbers I had to make it a separate function.
 ![Day 3 Filter Lines](https://github.com/JWaters02/AoC-2021/blob/fca008441a60551cfa25132d53895f3fe55dbb9c/BP%20Solutions/Day3-FilterLines.png)
