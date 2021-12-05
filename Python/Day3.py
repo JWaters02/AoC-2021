@@ -2,15 +2,10 @@ import time
 import fileinput
 from collections import Counter
 
-def main():
-    lines = [line for line in fileinput.input("./Input/Day3.txt")]
-    print(part1(lines))
-    print(part2(lines))
-
 def part1(lines):
     gamma = ""
     epsilon = ""
-    for i in range(12):
+    for i in range(5):
         counter_dict = Counter()
         for line in lines:
             counter_dict[line[i]] += 1
@@ -29,7 +24,7 @@ def part2(lines):
             bit_criteria = ["1", "0"]
         else:
             bit_criteria = ["0", "1"]
-        for i in range(12):
+        for i in range(5):
             counter_dict = Counter()
             for line in lines:
                 counter_dict[line[i]] += 1
@@ -42,7 +37,12 @@ def part2(lines):
         return lines[0]
     print(int(get_rating(lines, 0), 2) * int(get_rating(lines, 1), 2))
 
+def main():
+    lines = [line for line in fileinput.input("./Input/Day3.txt")]
+    part1(lines)
+    part2(lines)
+
 if __name__ == "__main__":
-    start_time = time.time()
+    start_time = time.perf_counter()
     main()
-    print("--- %s seconds ---" % (time.time() - start_time))
+    print("--- %s seconds ---" % (time.perf_counter() - start_time))

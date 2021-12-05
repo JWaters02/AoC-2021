@@ -1,16 +1,18 @@
 import time
 import fileinput
 
+def part1(lines):
+    pass
+
+def part2(lines):
+    pass
+
 def main():
     lines = [line for line in fileinput.input("./Input/Day6.txt")]
-
-def part1():
-    t = 1
-
-def part2():
-    t = 1
+    part1(lines)
+    part2(lines)
 
 if __name__ == "__main__":
-    start_time = time.time()
+    start_time = time.perf_counter()
     main()
-    print("--- %s seconds ---" % (time.time() - start_time))
+    print("--- %s seconds ---" % (time.perf_counter() - start_time))

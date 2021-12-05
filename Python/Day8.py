@@ -8,7 +8,7 @@ def part2(lines):
     pass
 
 def main():
-    lines = [line for line in fileinput.input("./Input/Day7.txt")]
+    lines = [line for line in fileinput.input("./Input/Day8.txt")]
     part1(lines)
     part2(lines)
 

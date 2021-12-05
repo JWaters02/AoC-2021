@@ -2,17 +2,6 @@ import time
 import fileinput
 from collections import defaultdict
 
-def main():
-    lines = [line for line in fileinput.input("./Input/Day5.txt")]
-    lists = []
-    for line in lines:
-        line = line.strip()
-        line = line.split(" -> ")
-        line = [(int(line[0].split(",")[0]), int(line[0].split(",")[1])), (int(line[1].split(",")[0]), int(line[1].split(",")[1]))]
-        lists.append(line)
-    part1(lists)
-    part2(lists)
-
 def count_cells(grid):
     cell_count = 0
     for _, value in grid.items():
@@ -59,7 +48,18 @@ def part2(lists):
             grid[(x1, y1)] += 1
     print(count_cells(grid))
 
+def main():
+    lines = [line for line in fileinput.input("./Input/Day5.txt")]
+    lists = []
+    for line in lines:
+        line = line.strip()
+        line = line.split(" -> ")
+        line = [(int(line[0].split(",")[0]), int(line[0].split(",")[1])), (int(line[1].split(",")[0]), int(line[1].split(",")[1]))]
+        lists.append(line)
+    part1(lists)
+    part2(lists)
+
 if __name__ == "__main__":
-    start_time = time.time()
+    start_time = time.perf_counter()
     main()
-    print("--- %s seconds ---" % (time.time() - start_time))
+    print("--- %s seconds ---" % (time.perf_counter() - start_time))
