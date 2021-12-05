@@ -46,6 +46,7 @@ This converts the binary string to a decimal number, since UE does not have a bu
 ![Day 3 Binary To Decimal](https://github.com/JWaters02/AoC-2021/blob/fca008441a60551cfa25132d53895f3fe55dbb9c/BP%20Solutions/Day3-BinToDec.png)
 The below function is effectively the main function for part 2, but since it gets called twice for the oxygen and C02 scrubbers I had to make it a separate function.
 ![Day 3 Get Rating](https://github.com/JWaters02/AoC-2021/blob/fca008441a60551cfa25132d53895f3fe55dbb9c/BP%20Solutions/Day3-GetRating.png)
+This function filters out the lines to determine the sole rating.
 ![Day 3 Filter Lines](https://github.com/JWaters02/AoC-2021/blob/fca008441a60551cfa25132d53895f3fe55dbb9c/BP%20Solutions/Day3-FilterLines.png)
 ### Day 4
 Day 4's input is so complex that I just did not want to spend the time to write a solution in BP.
