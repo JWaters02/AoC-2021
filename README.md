@@ -51,10 +51,8 @@ This function filters out the lines to determine the sole rating.
 ### Day 4
 Day 4's input is so complex that I just did not want to spend the time to write a solution in BP.
 ### Day 5
-Since parts 1 and 2 were very similar, I was able to put them into the same function with a parameter that checked which part was being run.
-<br>
-
-![Day 5 Main](https://github.com/JWaters02/AoC-2021/blob/c6495bfba780c18a8f25fcf05df4752fe9ca6d19/BP%20Solutions/Day5-Main.png)
+Since parts 1 and 2 were very similar, I was able to put them into the same function with a parameter that checked which part was being run.<br>
+![Day 5 Main](https://github.com/JWaters02/AoC-2021/blob/c6495bfba780c18a8f25fcf05df4752fe9ca6d19/BP%20Solutions/Day5-Main.png)<br>
 The overall program loop.
 ![Day 5 Find Vents](https://github.com/JWaters02/AoC-2021/blob/c6495bfba780c18a8f25fcf05df4752fe9ca6d19/BP%20Solutions/Day5-FindVents.png)
 This parses the input into the array of structs where element 0 and 1 are integer arrays. This was basically my lists data structure you can see in my Python solution.
