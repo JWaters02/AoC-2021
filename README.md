@@ -34,24 +34,26 @@ Day 25 |  |  |  |
 
 ## Blueprint Solutions
 ### Day 1
-![Day 1](https://github.com/JWaters02/AoC-2021/blob/1fe0359ac5857d86f953a2cc7ce757c69566648c/BP%20Solutions/Day1.png)
+![Day 1](https://github.com/JWaters02/AoC-2021/blob/b031097fba6b9ebfc6a603df9f25ff59810732cd/BP%20Solutions/Day1.png)
 ### Day 2
-![Day 2](https://github.com/JWaters02/AoC-2021/blob/75870dbf4b672cee0828152249e79db9554186a9/BP%20Solutions/Day2.png)
+![Day 2](https://github.com/JWaters02/AoC-2021/blob/b031097fba6b9ebfc6a603df9f25ff59810732cd/BP%20Solutions/Day2.png)
 ### Day 3
 There were a few different functions for various processes so I took screenshots of the most important ones. The first screenshot is the main function for parts 1 and 2. I wrote the BP code based off my Python solution.
-![Day 3 Main](https://github.com/JWaters02/AoC-2021/blob/fca008441a60551cfa25132d53895f3fe55dbb9c/BP%20Solutions/Day3-Main.png)
+![Day 3 Main](https://github.com/JWaters02/AoC-2021/blob/b031097fba6b9ebfc6a603df9f25ff59810732cd/BP%20Solutions/Day3-Main.png)
 This function below counts the number of 1s and 0s in each column and stores them into a struct.
-![Day 3 Create Counter](https://github.com/JWaters02/AoC-2021/blob/fca008441a60551cfa25132d53895f3fe55dbb9c/BP%20Solutions/Day3-CreateCounter.png)
+![Day 3 Create Counter](https://github.com/JWaters02/AoC-2021/blob/b031097fba6b9ebfc6a603df9f25ff59810732cd/BP%20Solutions/Day3-CreateCounter.png)
 This converts the binary string to a decimal number, since UE does not have a built in function for this.
-![Day 3 Binary To Decimal](https://github.com/JWaters02/AoC-2021/blob/fca008441a60551cfa25132d53895f3fe55dbb9c/BP%20Solutions/Day3-BinToDec.png)
+![Day 3 Binary To Decimal](https://github.com/JWaters02/AoC-2021/blob/b031097fba6b9ebfc6a603df9f25ff59810732cd/BP%20Solutions/Day3-BinToDec.png)
 The below function is effectively the main function for part 2, but since it gets called twice for the oxygen and C02 scrubbers I had to make it a separate function.
-![Day 3 Get Rating](https://github.com/JWaters02/AoC-2021/blob/fca008441a60551cfa25132d53895f3fe55dbb9c/BP%20Solutions/Day3-GetRating.png)
+![Day 3 Get Rating](https://github.com/JWaters02/AoC-2021/blob/b031097fba6b9ebfc6a603df9f25ff59810732cd/BP%20Solutions/Day3-GetRating.png)
 This function filters out the lines to determine the sole rating.
-![Day 3 Filter Lines](https://github.com/JWaters02/AoC-2021/blob/fca008441a60551cfa25132d53895f3fe55dbb9c/BP%20Solutions/Day3-FilterLines.png)
+![Day 3 Filter Lines](https://github.com/JWaters02/AoC-2021/blob/b031097fba6b9ebfc6a603df9f25ff59810732cd/BP%20Solutions/Day3-FilterLines.png)
 ### Day 4
 Day 4's input is so complex that I just did not want to spend the time to write a solution in BP.
 ### Day 5
 Since parts 1 and 2 were very similar, I was able to put them into the same function with a parameter that checked which part was being run.
+<br>
+
 ![Day 5 Main](https://github.com/JWaters02/AoC-2021/blob/c6495bfba780c18a8f25fcf05df4752fe9ca6d19/BP%20Solutions/Day5-Main.png)
 The overall program loop.
 ![Day 5 Find Vents](https://github.com/JWaters02/AoC-2021/blob/c6495bfba780c18a8f25fcf05df4752fe9ca6d19/BP%20Solutions/Day5-FindVents.png)
