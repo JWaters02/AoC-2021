@@ -19,10 +19,9 @@ def part2(starting_ages):
     for _ in range(256):
         n = defaultdict(int)
         for age, count in age_count.items():
-            if age > 0:
-                n[age - 1] += count
-            else:
-                n[6] += count
+            if age > 0: n[age - 1] += count
+            else: 
+                n[6] += count 
                 n[8] += count
         age_count = n
     return sum(age_count.values())

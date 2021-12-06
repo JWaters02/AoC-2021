@@ -19,7 +19,7 @@ int UHelperFunctions::BinaryToDecimal(const FString& Binary)
 
 void UHelperFunctions::Day4P1(const TArray<FString>& Lines)
 {
-    // Copy the first element of Lines into Drawn
+	// Copy the first element of Lines into Drawn
 	const FString Drawn = Lines[0];
 
 	// Copy the rest of the elements of Lines into Grids

@@ -1,10 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "FileIOStuff.h"
 
-#include "InputBehavior.h"
+#include "FileIO.h"
 
-FString UFileIOStuff::ReadFile(const FString& Path)
+FString UFileIO::ReadFile(const FString& Path)
 {
 	FString Result;
 	if (FFileHelper::LoadFileToString(Result, *Path))
@@ -14,7 +13,7 @@ FString UFileIOStuff::ReadFile(const FString& Path)
 	return "";
 }
 
-TArray<FString> UFileIOStuff::Lines(const FString& Text)
+TArray<FString> UFileIO::Lines(const FString& Text)
 {
 	bool Eof = false;
 	TArray<FString> Result;
