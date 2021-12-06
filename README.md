@@ -50,3 +50,18 @@ This function filters out the lines to determine the sole rating.
 ![Day 3 Filter Lines](https://github.com/JWaters02/AoC-2021/blob/fca008441a60551cfa25132d53895f3fe55dbb9c/BP%20Solutions/Day3-FilterLines.png)
 ### Day 4
 Day 4's input is so complex that I just did not want to spend the time to write a solution in BP.
+### Day 5
+Since parts 1 and 2 were very similar, I was able to put them into the same function with a parameter that checked which part was being run.
+![Day 5 Main](https://github.com/JWaters02/AoC-2021/blob/c6495bfba780c18a8f25fcf05df4752fe9ca6d19/BP%20Solutions/Day5-Main.png)
+The overall program loop.
+![Day 5 Find Vents](https://github.com/JWaters02/AoC-2021/blob/c6495bfba780c18a8f25fcf05df4752fe9ca6d19/BP%20Solutions/Day5-FindVents.png)
+This parses the input into the array of structs where element 0 and 1 are integer arrays. This was basically my lists data structure you can see in my Python solution.
+![Day 5 Parse Input](https://github.com/JWaters02/AoC-2021/blob/c6495bfba780c18a8f25fcf05df4752fe9ca6d19/BP%20Solutions/Day5-ParseInput.png)
+This function sets the x1, x2, y1, y2 values for part 1 plus the dx and dy values for part 2.
+![Day 5 Set Coords](https://github.com/JWaters02/AoC-2021/blob/c6495bfba780c18a8f25fcf05df4752fe9ca6d19/BP%20Solutions/Day5-SetCoords.png)
+Then it does all checks for line intersections...
+![Day 5 Create Grid](https://github.com/JWaters02/AoC-2021/blob/c6495bfba780c18a8f25fcf05df4752fe9ca6d19/BP%20Solutions/Day5-CreateGrid.png)
+And passes them into this function which adds them to a grid - which here is a struct where element 0 is an integer array (stores x, y coordinates) and element 0 is the count of intersections on each coordinate.
+![Day 5 Add Line To Grid](https://github.com/JWaters02/AoC-2021/blob/c6495bfba780c18a8f25fcf05df4752fe9ca6d19/BP%20Solutions/Day5-AddLineToGrid.png)
+It also has to do an additional check to see if the coordinate already exists in the grid, which then increments the count at that coordinate.
+![Day 5 If Coords Exist](https://github.com/JWaters02/AoC-2021/blob/c6495bfba780c18a8f25fcf05df4752fe9ca6d19/BP%20Solutions/Day5-IfCoordsExist.png)
