@@ -83,3 +83,9 @@ At first I thought I could just nick my parse input function from day 6, however
 ![Day 7 Parse Input](https://github.com/JWaters02/AoC-2021/blob/dcaceab56567af5d72b11abe93f59746877a7bcf/BP%20Solutions/Day7-ParseInput.png)
 For my solution to work, I needed to sort the array. However, BP does not have a built in sort function, so I had to write my own. I decided to use insertion sort because although it's not the most efficient (O(n^2)), it's the easiest to write - I tried writing quick sort first but my implementation did not work and I never figured out why.
 ![Day 7 Sort](https://github.com/JWaters02/AoC-2021/blob/e9388e41de65c35bdaeb3e90791de6d46540336b/BP%20Solutions/Day7-Sort.png)
+I then just wrote the functions that I have in my Python solution.
+![Day 7 Middle](https://github.com/JWaters02/AoC-2021/blob/3984104fe7c1775f96dc6c66cf57f438f789199e/BP%20Solutions/Day7-Middle.png)
+![Day 7 Fuel Usage](https://github.com/JWaters02/AoC-2021/blob/e9388e41de65c35bdaeb3e90791de6d46540336b/BP%20Solutions/Day7-FuelUsage.png)
+![Day 7 Fuel Cost](https://github.com/JWaters02/AoC-2021/blob/3984104fe7c1775f96dc6c66cf57f438f789199e/BP%20Solutions/Day7-FuelCost.png)
+Basically my part 2 solution.
+![Day 7 Variable Fuel Usage](https://github.com/JWaters02/AoC-2021/blob/main/BP%20Solutions/Day7-VariableFuelUsage.png)
