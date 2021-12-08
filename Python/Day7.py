@@ -1,10 +1,17 @@
 import time
 import fileinput
 
+def middle(pos):
+    return pos[len(pos) // 2]
+
+def fuel_usage(pos, middle):
+    # fuel_usage = 0
+    # for x in pos:
+    #     fuel_usage += sum(abs(x - middle))
+    return sum(abs(x - middle) for x in pos)
+
 def part1(pos):
-    middle = pos[len(pos) // 2]
-    fuel_usage = sum(abs(x - middle) for x in pos)
-    print(fuel_usage)
+    print(fuel_usage(pos, middle(pos)))
 
 def part2(pos):
     def fuel_cost(move):

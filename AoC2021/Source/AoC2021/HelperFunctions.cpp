@@ -29,3 +29,40 @@ int UHelperFunctions::CountOccurrencesInArray(const TArray<int>& Array, const in
 	}
 	return Count;
 }
+
+void UHelperFunctions::Swap(int* A, int* B)
+{
+	const int T = *A;
+	*A = *B;
+	*B = T;
+}
+
+int UHelperFunctions::PartitionArray(TArray<int>& Array, const int Low, const int High)
+{
+	const int Pivot = Array[High];
+	int i = Low - 1;
+	for (int j = Low; j < High; j++)
+	{
+		if (Array[j] <= Pivot)
+		{
+			i++;
+			/*const int Temp = Array[i];
+			Array[i] = Array[j];
+			Array[j] = Temp;*/
+			Swap(&Array[i], &Array[j]);
+		}
+	}
+	Swap(&Array[i + 1], &Array[High]);
+	return i + 1;
+}
+
+void UHelperFunctions::QuickSort(const TArray<int>& Array, const int Low, const int High)
+{
+	TArray<int> SortedArray = Array;
+	if (Low < High)
+	{
+		const int Pivot = PartitionArray(SortedArray, Low, High);
+		QuickSort(Array, Low, Pivot - 1);
+		QuickSort(Array, Pivot + 1, High);
+	}
+}

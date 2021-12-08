@@ -13,7 +13,7 @@ Day | Part 1 Time | Part 2 Time (Accumulated) | Overall Execution Time (s) | Glo
 [Day 5](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day5.py) | 00:25:35 | 00:38:44 | 0.130 | 2995
 [Day 6](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day6.py) | 00:15:52 | 00:24:23 | 0.503 | 2685
 [Day 7](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day7.py) | 00:10:59 | 00:19:08 | 0.400 | 4856
-Day 8 |  |  |  | 
+[Day 8](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day8.py) | 00:53:40[^1] | 01:35:09 | 0.005 | 4498
 Day 9 |  |  |  | 
 Day 10 |  |  |  | 
 Day 11 |  |  |  | 
@@ -31,6 +31,8 @@ Day 22 |  |  |  |
 Day 23 |  |  |  | 
 Day 24 |  |  |  | 
 Day 25 |  |  |  |  
+
+[^1]: I woke up 35 minutes late.
 
 ## Blueprint Solutions
 My goal with these blueprint solutions is that I want to try and match them to the Python solutions I write first. If I find a better way of doing things, I update it in the Python solution first, and then update the blueprint solution. This is partially because I find it difficult to write BP if I don't have code to follow along with. Building upon this, it makes debugging the BP solution much easier since I can debug the Python solution as a reference. The only times this does not hold directly true is when I use a datastructure or library that does not exist in BP and I have to recreate with something my own, for example a defaultdict or Counter from collections. 
