@@ -30,39 +30,32 @@ int UHelperFunctions::CountOccurrencesInArray(const TArray<int>& Array, const in
 	return Count;
 }
 
-void UHelperFunctions::Swap(int* A, int* B)
-{
-	const int T = *A;
-	*A = *B;
-	*B = T;
-}
-
-int UHelperFunctions::PartitionArray(TArray<int>& Array, const int Low, const int High)
-{
-	const int Pivot = Array[High];
-	int i = Low - 1;
-	for (int j = Low; j < High; j++)
-	{
-		if (Array[j] <= Pivot)
-		{
-			i++;
-			/*const int Temp = Array[i];
-			Array[i] = Array[j];
-			Array[j] = Temp;*/
-			Swap(&Array[i], &Array[j]);
-		}
-	}
-	Swap(&Array[i + 1], &Array[High]);
-	return i + 1;
-}
-
-void UHelperFunctions::QuickSort(const TArray<int>& Array, const int Low, const int High)
+TArray<int> UHelperFunctions::InsertionSort(const TArray<int>& Array)
 {
 	TArray<int> SortedArray = Array;
-	if (Low < High)
+	for (int i = 1; i < SortedArray.Num(); i++)
 	{
-		const int Pivot = PartitionArray(SortedArray, Low, High);
-		QuickSort(Array, Low, Pivot - 1);
-		QuickSort(Array, Pivot + 1, High);
+		const int Temp = SortedArray[i];
+		int j = i - 1;
+		while (j >= 0 && SortedArray[j] > Temp)
+		{
+			SortedArray[j + 1] = SortedArray[j];
+			j--;
+		}
+		SortedArray[j + 1] = Temp;
 	}
+	return SortedArray;
+}
+
+TArray<int> UHelperFunctions::Day7Parse(const FString String)
+{
+	TArray<int> Array;
+	std::stringstream SS(TCHAR_TO_UTF8(*String));
+	while (SS.good())
+	{
+		std::string Substr;
+		getline(SS, Substr, ',');
+		Array.Add(std::stoi(Substr));
+	}
+	return Array;
 }

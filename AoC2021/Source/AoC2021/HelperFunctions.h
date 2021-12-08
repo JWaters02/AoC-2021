@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
+#include <sstream>
 #include "HelperFunctions.generated.h"
 
 /**
@@ -16,8 +17,6 @@ class AOC2021_API UHelperFunctions : public UBlueprintFunctionLibrary
 public:
 	UFUNCTION(BlueprintCallable) static int BinaryToDecimal(const FString& Binary);
 	UFUNCTION(BlueprintCallable) static int CountOccurrencesInArray(const TArray<int>& Array, int Value, int& Count);
-	UFUNCTION(BlueprintCallable) static void QuickSort(const TArray<int>& Array, const int Low, const int High);
-private:
-	UFUNCTION(BlueprintCallable) static void Swap(int* A, int* B);
-	UFUNCTION(BlueprintCallable) static int PartitionArray(TArray<int>& Array, const int Low, const int High);
+	UFUNCTION(BlueprintCallable) static TArray<int> InsertionSort(const TArray<int>& Array);
+	UFUNCTION(BlueprintCallable) static TArray<int> Day7Parse(const FString String);
 };

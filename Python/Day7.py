@@ -4,25 +4,23 @@ import fileinput
 def middle(pos):
     return pos[len(pos) // 2]
 
-def fuel_usage(pos, middle):
-    # fuel_usage = 0
-    # for x in pos:
-    #     fuel_usage += sum(abs(x - middle))
-    return sum(abs(x - middle) for x in pos)
+def fuel_cost(move):
+    return move * (move + 1) // 2
+
+def fuel_usage(pos, middle, part):
+    if part == 1:
+        return sum(abs(x - middle) for x in pos)
+    else:
+        return sum(fuel_cost(abs(x - middle)) for x in pos)
 
 def part1(pos):
-    print(fuel_usage(pos, middle(pos)))
+    print(fuel_usage(pos, middle(pos), 1))
 
 def part2(pos):
-    def fuel_cost(move):
-        return move * (move + 1) // 2
-    
-    middle = pos[len(pos) // 2] 
-    fuel_usage = sum(fuel_cost(abs(x - middle)) for x in pos)
-
-    for middle in range(min(pos), max(pos) + 1):
-        fuel_usage = min(fuel_usage, sum(fuel_cost(abs(x - middle)) for x in pos))
-    print(fuel_usage)
+    fuel_usages = fuel_usage(pos, middle(pos), 2)
+    for middles in range(min(pos), max(pos) + 1):
+        fuel_usages = min(fuel_usages, fuel_usage(pos, middles, 2))
+    print(fuel_usages)
 
 def main():
     lines = [line for line in fileinput.input("./Input/Day7.txt")]
