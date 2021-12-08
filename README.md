@@ -38,7 +38,7 @@ Day 25 |  |  |  |
 My goal with these blueprint solutions is that I want to try and match them to the Python solutions I write first. If I find a better way of doing things, I update it in the Python solution first, and then update the blueprint solution. This is partially because I find it difficult to write BP if I don't have code to follow along with. Building upon this, it makes debugging the BP solution much easier since I can debug the Python solution as a reference. The only times this does not hold directly true is when I use a datastructure or library that does not exist in BP and I have to recreate with something my own, for example a defaultdict or Counter from collections. 
 ### Reading in the input
 BP cannot do file I/O on its own so I had to write a couple of small C++ functions to read in the input.
-![Read Input C++](https://github.com/JWaters02/AoC-2021/blob/71b4748523fedc471236bfe92ee61b2a52047428/BP%20Solutions/ReadInput-CPP.png)
+![Read Input C++](https://github.com/JWaters02/AoC-2021/blob/71b4748523fedc471236bfe92ee61b2a52047428/BP%20Solutions/ReadInput-CPP.png)<br>
 I then have a Blueprint Library with a function helper functions, including Read Input that calls upon the reflected C++ functions. I also have a pre-path set to the input text files directory so that in each new Day BP I only need to change the file name.
 ![Read Input BaseLib](https://github.com/JWaters02/AoC-2021/blob/71b4748523fedc471236bfe92ee61b2a52047428/BP%20Solutions/ReadInput-BaseLib.png)
 I then have a Base BP Actor that has a couple of variables and nodes already set up. I then can just duplicate the Base BP Actor and build my solutions from there.
