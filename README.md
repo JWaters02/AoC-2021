@@ -77,3 +77,9 @@ The overall program loop that counts the fish. As you can see, I had to use int6
 ![Day 6 Count Fish](https://github.com/JWaters02/AoC-2021/blob/52e4e7cbada8c024f19b26ff7ff90784b1c78954/BP%20Solutions/Day6-CountFish.png)
 This function takes the starting ages and returns the list of fish at the start.
 ![Day 6 Add Fish](https://github.com/JWaters02/AoC-2021/blob/52e4e7cbada8c024f19b26ff7ff90784b1c78954/BP%20Solutions/Day6-AddFish.png)
+### Day7
+![Day 7 Main](https://github.com/JWaters02/AoC-2021/blob/dcaceab56567af5d72b11abe93f59746877a7bcf/BP%20Solutions/Day7-Main.png)
+At first I thought I could just nick my parse input function from day 6, however I built it assuming that the numbers were all 1 digit, and since day 7 input as numbers of more than 1 digit, I could not use it. I know that I could modify it by checking for the number of characters before the delimeter since last being split and add those chars to a string and converting to and int and adding to the int array. However, I couldn't really be bothered and decided to cheat a little by writng a C++ function to do it for me.
+![Day 7 Parse Input](https://github.com/JWaters02/AoC-2021/blob/dcaceab56567af5d72b11abe93f59746877a7bcf/BP%20Solutions/Day7-ParseInput.png)
+For my solution to work, I needed to sort the array. However, BP does not have a built in sort function, so I had to write my own. I decided to use insertion sort because although it's not the most efficient (O(n^2)), it's the easiest to write - I tried writing quick sort first but my implementation did not work and I never figured out why.
+![Day 7 Sort](https://github.com/JWaters02/AoC-2021/blob/e9388e41de65c35bdaeb3e90791de6d46540336b/BP%20Solutions/Day7-Sort.png)
