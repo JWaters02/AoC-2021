@@ -17,23 +17,15 @@ int UHelperFunctions::BinaryToDecimal(const FString& Binary)
 	return Ret;
 }
 
-void UHelperFunctions::Day4P1(const TArray<FString>& Lines)
+int UHelperFunctions::CountOccurrencesInArray(const TArray<int>& Array, const int Value, int& Count)
 {
-	// Copy the first element of Lines into Drawn
-	const FString Drawn = Lines[0];
-
-	// Copy the rest of the elements of Lines into Grids
-	TArray<TArray<FString>> Grids;
-	for (int i = 2; i < Lines.Num(); i++)
+	Count = 0;
+	for (int i = 0; i < Array.Num(); i++)
 	{
-		TArray<FString> Grid;
-		Grid.Add(Lines[i]);
-		Grids.Add(Grid);
+		if (Array[i] == Value)
+		{
+			Count++;
+		}
 	}
-
-	// Split Drawn into a TArray of FStrings
-	TArray<FString> DrawnArray;
-	Drawn.ParseIntoArray(DrawnArray, TEXT(","), true);
-
-	
+	return Count;
 }

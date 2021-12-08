@@ -15,5 +15,5 @@ class AOC2021_API UHelperFunctions : public UBlueprintFunctionLibrary
 	GENERATED_BODY()
 public:
 	UFUNCTION(BlueprintCallable) static int BinaryToDecimal(const FString& Binary);
-	UFUNCTION(BlueprintCallable) static void Day4P1(const TArray<FString>& Lines);
+	UFUNCTION(BlueprintCallable) static int CountOccurrencesInArray(const TArray<int>& Array, int Value, int& Count);
 };
