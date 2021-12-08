@@ -42,7 +42,7 @@ BP cannot do file I/O on its own so I had to write a couple of small C++ functio
 I then have a Blueprint Library with a function helper functions, including Read Input that calls upon the reflected C++ functions. I also have a pre-path set to the input text files directory so that in each new Day BP I only need to change the file name.
 ![Read Input BaseLib](https://github.com/JWaters02/AoC-2021/blob/71b4748523fedc471236bfe92ee61b2a52047428/BP%20Solutions/ReadInput-BaseLib.png)
 I then have a Base BP Actor that has a couple of variables and nodes already set up. I then can just duplicate the Base BP Actor and build my solutions from there.
-![Base BP Actor](https://github.com/JWaters02/AoC-2021/blob/71b4748523fedc471236bfe92ee61b2a52047428/BP%20Solutions/BaseBP.png)
+![Base BP Actor](https://github.com/JWaters02/AoC-2021/blob/42041b80a35c83fa3429c0b7baf8941574c8d97f/BP%20Solutions/BaseBP.png)
 ### Day 1
 ![Day 1](https://github.com/JWaters02/AoC-2021/blob/b031097fba6b9ebfc6a603df9f25ff59810732cd/BP%20Solutions/Day1.png)
 ### Day 2
