@@ -68,7 +68,7 @@ It also has to do an additional check to see if the coordinate already exists in
 ![Day 5 If Coords Exist](https://github.com/JWaters02/AoC-2021/blob/c6495bfba780c18a8f25fcf05df4752fe9ca6d19/BP%20Solutions/Day5-IfCoordsExist.png)
 ### Day 6
 Since parts 1 and 2 were very similar, I was able to put them into the same function with a parameter that checked which part was being run.<br>
-![Day 6 Main](https://github.com/JWaters02/AoC-2021/blob/52e4e7cbada8c024f19b26ff7ff90784b1c78954/BP%20Solutions/Day6-Main.png)
+![Day 6 Main](https://github.com/JWaters02/AoC-2021/blob/52e4e7cbada8c024f19b26ff7ff90784b1c78954/BP%20Solutions/Day6-Main.png)<br>
 First I needed to parse the input into an array. This was actually more difficult than I thought it would be, for whatever reason.
 ![Day 6 Parse Input](https://github.com/JWaters02/AoC-2021/blob/52e4e7cbada8c024f19b26ff7ff90784b1c78954/BP%20Solutions/Day6-ParseInput.png)
 The overall program loop that counts the fish. As you can see, I had to use int64 for the count because I was getting reaching the bit limit. Sometimes doing so much programming in BP breaks my brain and so it took me a solid 10 minutes to figure out how to convert from int64 to string, since UE4 does not have a built in cast for this, and obviously I cannot just convert to int to string as it would hit the bit limit again.
