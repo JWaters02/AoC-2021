@@ -6,7 +6,7 @@ def part1(lines):
     for line in lines:
         line = line.strip()
         line = line.split(" | ")[1]
-        count += sum(1 for word in line.split() if len(word) in {2: 1, 4: 4, 3: 7, 7: 8})
+        count += sum(1 for word in line.split() if len(word) in [2, 3, 4, 7])
     print(count)
 
 def part2(lines):
