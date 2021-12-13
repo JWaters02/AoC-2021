@@ -15,10 +15,10 @@ Day | Part 1 Time | Part 2 Time (Accumulated) | Overall Execution Time (s) | Glo
 [Day 7](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day7.py) | 00:10:59 | 00:19:08 | 0.400 | 4856
 [Day 8](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day8.py) | 00:53:40[^1] | 01:35:09 | 0.005 | 4498
 [Day 9](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day9.py) | 00:37:06 | 01:37:18 | 0.005 | 7399
-Day 10 |  |  |  | 
-Day 11 |  |  |  | 
-Day 12 |  |  |  | 
-Day 13 |  |  |  | 
+[Day 10](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day10.py) | 00:26:18 | 00:58:55 | 0.003 | 7274
+[Day 11](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day11.py) | 02:55:92[^2] | 03:09:17 | 0.040 | 10232
+[Day 12](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day12.py) | 08:14:18[^3] | 08:56:02 | 0.450 | 17522
+[Day 13](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day13.py) | 00:39:36 | 00:41:50[^4] | 0.004 | 3420
 Day 14 |  |  |  | 
 Day 15 |  |  |  | 
 Day 16 |  |  |  | 
@@ -33,9 +33,12 @@ Day 24 |  |  |  |
 Day 25 |  |  |  |  
 
 [^1]: I woke up 35 minutes late.
+[^2]: I woke up 2 hours 10 minutes late.
+[^3]: I woke up 7 hours 30 minutes late. It was worth it though. It was the best night's sleep I've had since the 31st of November!
+[^4]: I actually could tell what part 2 was going to be, so I predicted it before I submitted my part 1 solution, so that I could try and get like a 2 second delta. But like an absolute idiot I got the solution in the debugger output so when I needed it I was panicking because I couldn't find it and I had messed about in the code for a bit in between. So my delta ended up being just over 3 minutes... 🤦‍♂️
 
 ## Blueprint Solutions
-My goal with these blueprint solutions is that I want to try and match them to the Python solutions I write first. If I find a better way of doing things, I update it in the Python solution first, and then update the blueprint solution. This is partially because I find it difficult to write BP if I don't have code to follow along with. Building upon this, it makes debugging the BP solution much easier since I can debug the Python solution as a reference. The only times this does not hold directly true is when I use a datastructure or library that does not exist in BP and I have to recreate with something my own, for example a defaultdict or Counter from collections. 
+My goal with these blueprint solutions is that I want to try and match them to the Python solutions I write first. If I find a better way of doing things, I update it in the Python solution first, and then update the blueprint solution. This is partially because I find it difficult to write BP if I don't have code to follow along with. Building upon this, it makes debugging the BP solution much easier since I can debug the Python solution as a reference. The only times this does not hold directly true is when I use a datastructure or library that does not exist in BP and I have to recreate with something my own, for example a defaultdict or Counter from collections.
 ### Reading in the input
 BP cannot do file I/O on its own so I had to write a couple of small C++ functions to read in the input.
 ![Read Input C++](https://github.com/JWaters02/AoC-2021/blob/71b4748523fedc471236bfe92ee61b2a52047428/BP%20Solutions/ReadInput-CPP.png)<br>
@@ -86,7 +89,7 @@ This function takes the starting ages and returns the list of fish at the start.
 ![Day 6 Add Fish](https://github.com/JWaters02/AoC-2021/blob/52e4e7cbada8c024f19b26ff7ff90784b1c78954/BP%20Solutions/Day6-AddFish.png)
 ### Day7
 ![Day 7 Main](https://github.com/JWaters02/AoC-2021/blob/dcaceab56567af5d72b11abe93f59746877a7bcf/BP%20Solutions/Day7-Main.png)
-At first I thought I could just nick my parse input function from day 6, however I built it assuming that the numbers were all 1 digit, and since day 7 input as numbers of more than 1 digit, I could not use it. I know that I could modify it by 1) checking for the number of characters before the delimeter since last being split c) add those chars to a string 3) converting to an int 4) adding to the int array. However, I couldn't really be bothered and decided to cheat a little by writng a C++ function to do it for me.
+At first I thought I could just nick my parse input function from day 6, however I built it assuming that the numbers were all 1 digit, and since day 7 input as numbers of more than 1 digit, I could not use it. I know that I could modify it by 1) checking for the number of characters before the delimeter since last being split 2) add those chars to a string 3) converting to an int 4) adding to the int array. However, I couldn't really be bothered and decided to cheat a little by writng a C++ function to do it for me.
 ![Day 7 Parse Input](https://github.com/JWaters02/AoC-2021/blob/dcaceab56567af5d72b11abe93f59746877a7bcf/BP%20Solutions/Day7-ParseInput.png)
 For my solution to work, I needed to sort the array. However, BP does not have a built in sort function, so I had to write my own. I decided to use insertion sort because although it's not the most efficient (O(n^2)), it's the easiest to write - I tried writing quick sort first but my implementation did not work and I couldn't figure out why.
 ![Day 7 Sort](https://github.com/JWaters02/AoC-2021/blob/e9388e41de65c35bdaeb3e90791de6d46540336b/BP%20Solutions/Day7-Sort.png)
