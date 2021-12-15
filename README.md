@@ -19,8 +19,8 @@ Day | Part 1 Time | Part 2 Time (Accumulated) | Overall Execution Time (s) | Glo
 [Day 11](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day11.py) | 02:55:92[^2] | 03:09:17 | 0.040 | 10232
 [Day 12](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day12.py) | 08:14:18[^3] | 08:56:02 | 0.450 | 17522
 [Day 13](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day13.py) | 00:39:36 | 00:41:50[^4] | 0.004 | 3420
-Day 14 |  |  |  | 
-Day 15 |  |  |  | 
+[Day 14](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day14.py) | 07:22:06[^5] | - | - | -
+[Day 15](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day15.py) | 03:43:19[^6] | 03:51:19 | 5.765 | 6729
 Day 16 |  |  |  | 
 Day 17 |  |  |  | 
 Day 18 |  |  |  | 
@@ -36,6 +36,8 @@ Day 25 |  |  |  |
 [^2]: I woke up 2 hours 10 minutes late.
 [^3]: I woke up 7 hours 30 minutes late. It was worth it though. It was the best night's sleep I've had since the 31st of November!
 [^4]: I actually could tell what part 2 was going to be, so I predicted it before I submitted my part 1 solution, so that I could try and get like a 2 second delta. But like an absolute idiot I got the solution in the debugger output so when I needed it I was panicking because I couldn't find it and I had messed about in the code for a bit in between. So my delta ended up being just over 2 minutes... 🤦‍♂️
+[^5]: I woke up 6 hours late.
+[^6]: I woke up 3 hours late.
 
 ## Blueprint Solutions
 My goal with these blueprint solutions is that I want to try and match them to the Python solutions I write first. If I find a better way of doing things, I update it in the Python solution first, and then update the blueprint solution. This is partially because I find it difficult to write BP if I don't have code to follow along with. Building upon this, it makes debugging the BP solution much easier since I can debug the Python solution as a reference. The only times this does not hold directly true is when I use a datastructure or library that does not exist in BP and I have to recreate with something my own, for example a defaultdict or Counter from collections.
