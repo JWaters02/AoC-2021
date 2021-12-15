@@ -101,3 +101,20 @@ I then just wrote the functions that I have in my Python solution.
 ![Day 7 Fuel Cost](https://github.com/JWaters02/AoC-2021/blob/3984104fe7c1775f96dc6c66cf57f438f789199e/BP%20Solutions/Day7-FuelCost.png)
 Basically my part 2 solution.
 ![Day 7 Variable Fuel Usage](https://github.com/JWaters02/AoC-2021/blob/main/BP%20Solutions/Day7-VariableFuelUsage.png)
+### Day 8
+I only managed to do Part 1 because I was unable to figure out how to do Part 2.
+![Day 8 Main](https://github.com/JWaters02/AoC-2021/blob/7caede8628764b3a88c70c000a3a9a6829256f93/BP%20Solutions/Day8-Main.png)
+![Day 8 Parse Input](https://github.com/JWaters02/AoC-2021/blob/7caede8628764b3a88c70c000a3a9a6829256f93/BP%20Solutions/Day8-ParseInput.png)
+![Day 8 Count Digits](https://github.com/JWaters02/AoC-2021/blob/7caede8628764b3a88c70c000a3a9a6829256f93/BP%20Solutions/Day8-CountDigits.png)
+Before I discovered the Parse Into Array function that you can see in the above image, I tried writing my own first. I successfully wrote the function... but it used recursion, which although UE allows, I do NOT recommend. UE completely dies, as the initial function call has the first element become a call by reference, which although seems fine at first, it is not. Whilst debugging, the array passed by reference claims to have a value, but when I pass the array into a function, there is no value. So the function does not actually do anything. I asked a lot of UE4 developers and no one knew, but someone finally pointed me towards this Parse Into Array function that already exists, thankfully. So from now on I have know I am unable to implement recursive functions.
+![Day 8 Recursive Mess](https://github.com/JWaters02/AoC-2021/blob/7caede8628764b3a88c70c000a3a9a6829256f93/BP%20Solutions/Day8-RecursiveMess.png)
+### Day 9
+Day 9 was a bit of a copout, although slightly less so than Day 8. Part 1 was so easy that I programmed it all and it worked first time! But part 2, which involves recursion with depth first search, did not go so well. I tried giving it a second shot but got the same issue as in Day 8. So I decided to write part 2 in C++.
+![Day 9 Main](https://github.com/JWaters02/AoC-2021/blob/7caede8628764b3a88c70c000a3a9a6829256f93/BP%20Solutions/Day9-Main.png)
+I had to parse the input lines into the grid first. Since 2D arrays do not exist, this had to be an array of structs of an array of ints.
+![Day 9 Make Grid](https://github.com/JWaters02/AoC-2021/blob/7caede8628764b3a88c70c000a3a9a6829256f93/BP%20Solutions/Day9-MakeGrid.png)
+Then it was just a bunch of if statements to check for the risk level of the grid.
+![Day 9 Get Risk](https://github.com/JWaters02/AoC-2021/blob/7caede8628764b3a88c70c000a3a9a6829256f93/BP%20Solutions/Day9-GetRisk.png)
+For part 2 I basically just wrote a C++ version of my Python solution.
+![Day 9 Map Basins](https://github.com/JWaters02/AoC-2021/blob/7caede8628764b3a88c70c000a3a9a6829256f93/BP%20Solutions/Day9-MapBasins.png)
+![Day 9 DFS](https://github.com/JWaters02/AoC-2021/blob/7caede8628764b3a88c70c000a3a9a6829256f93/BP%20Solutions/Day9-DFS.png)
