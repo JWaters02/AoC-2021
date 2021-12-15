@@ -3,7 +3,7 @@ import time
 def part1(grid):
     risk = 0
     for i in range(len(grid)):
-        for j in range(len(grid[i])):
+        for j in range(len(grid)):
             if i == 0 and j == 0:
                 continue
             elif i > 0 and grid[i][j] >= grid[i-1][j]:
@@ -34,7 +34,7 @@ def part2(grid):
     visited = set()
     basins = []
     for i in range(len(grid)):
-        for j in range(len(grid[i])):
+        for j in range(len(grid)):
             if (i, j) not in visited and grid[i][j] != 9:
                 previous_node = len(visited)
                 depth_first_search(grid, visited, i, j)

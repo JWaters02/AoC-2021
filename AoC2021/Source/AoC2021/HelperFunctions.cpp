@@ -59,3 +59,49 @@ TArray<int> UHelperFunctions::Day7Parse(const FString String)
 	}
 	return Array;
 }
+
+int UHelperFunctions::MapBasins(TArray<FString> Lines)
+{
+	TArray<TArray<int>> Grid = TArray<TArray<int>>();
+	for (int i = 0; i < Lines.Num(); i++)
+	{
+		Grid.Add(TArray<int>());
+		for (int j = 0; j < Lines[i].Len(); j++)
+		{
+			Grid[i].Add(Lines[i][j] - '0');
+		}
+	}
+	TArray<int> Basins = TArray<int>();
+	std::set<int> Visited = std::set<int>();
+	for (int i = 0; i < Grid.Num(); i++)
+	{
+		for (int j = 0; j < Grid[i].Num(); j++)
+		{
+			if (Visited.find(i * Grid[i].Num() + j) == Visited.end() && Grid[i][j] != 9)
+			{
+				const int Previous = Visited.size();
+				DepthFirstSearch(Grid, i, j, Visited);
+				Basins.Add(Visited.size() - Previous);
+			}
+		}
+	}
+	Basins.Sort();
+	return Basins[Basins.Num() - 1] * Basins[Basins.Num() - 2] * Basins[Basins.Num() - 3];
+}
+
+void UHelperFunctions::DepthFirstSearch(TArray<TArray<int>>& Grid, const int StartX, const int StartY, std::set<int>& Visited)
+{
+	if (StartX < 0 || StartX >= Grid.Num() || StartY < 0 || StartY >= Grid[0].Num())
+	{
+		return;
+	}
+	if (Visited.find(StartX * Grid[0].Num() + StartY) != Visited.end() && Grid[StartX][StartY] != 9)
+	{
+		return;
+	}
+	Visited.insert(StartX * Grid[0].Num() + StartY);
+	DepthFirstSearch(Grid, StartX - 1, StartY, Visited);
+	DepthFirstSearch(Grid, StartX + 1, StartY, Visited);
+	DepthFirstSearch(Grid, StartX, StartY - 1, Visited);
+	DepthFirstSearch(Grid, StartX, StartY + 1, Visited);
+}
