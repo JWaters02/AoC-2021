@@ -21,7 +21,7 @@ Day | Part 1 Time | Part 2 Time (Accumulated) | Overall Execution Time (s) | Glo
 [Day 13](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day13.py) | 00:39:36 | 00:41:50[^4] | 0.004 | 3420
 [Day 14](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day14.py) | 07:22:06[^5] | - | - | -
 [Day 15](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day15.py) | 03:43:19[^6] | 03:51:19 | 5.765 | 6729
-Day 16 |  |  |  | 
+[Day 16](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day16.py) | 10:01:36 | 10:07:11 | 0.004 | 10935
 Day 17 |  |  |  | 
 Day 18 |  |  |  | 
 Day 19 |  |  |  | 
