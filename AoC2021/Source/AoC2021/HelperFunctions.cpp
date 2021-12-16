@@ -47,6 +47,23 @@ TArray<int> UHelperFunctions::InsertionSort(const TArray<int>& Array)
 	return SortedArray;
 }
 
+TArray<int64> UHelperFunctions::InsertionSort64(const TArray<int64>& Array)
+{
+	TArray<int64> SortedArray = Array;
+	for (int i = 1; i < SortedArray.Num(); i++)
+	{
+		const int64 Temp = SortedArray[i];
+		int64 j = i - 1;
+		while (j >= 0 && SortedArray[j] > Temp)
+		{
+			SortedArray[j + 1] = SortedArray[j];
+			j--;
+		}
+		SortedArray[j + 1] = Temp;
+	}
+	return SortedArray;
+}
+
 TArray<int> UHelperFunctions::Day7Parse(const FString String)
 {
 	TArray<int> Array;

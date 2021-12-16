@@ -30,7 +30,7 @@ def part2(lines):
         for char in list(line.strip()):
             if char in '([{<':
                 stack.append(char)
-            elif not stack or stack.pop() not in matches2[char]:
+            elif stack.pop() not in matches2[char]:
                 corrupt = True
                 break
         if not corrupt:
