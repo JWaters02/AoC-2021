@@ -1,5 +1,14 @@
 import time
 
+def get_adjacent_tiles(grid, x, y):
+    tiles = []
+    for i in range(-1, 2):
+        for j in range(-1, 2):
+            if i != 0 or j != 0:
+                if 0 <= x + i < len(grid) and 0 <= y + j < len(grid[x + i]):
+                    tiles.append([x + i, y + j])
+    return tiles
+
 def step_1(grid):
     flashed = False
     for x in range(len(grid)):
@@ -20,14 +29,6 @@ def step_2(grid, flashed):
                         grid[x][y] = 0
                         flashed = True
                         flash_count.append([x, y])
-                        def get_adjacent_tiles(grid, x, y):
-                            tiles = []
-                            for i in range(-1, 2):
-                                for j in range(-1, 2):
-                                    if i != 0 or j != 0:
-                                        if 0 <= x + i < len(grid) and 0 <= y + j < len(grid[x + i]):
-                                            tiles.append([x + i, y + j])
-                            return tiles
                         for adjacent in get_adjacent_tiles(grid, x, y):
                             grid[adjacent[0]][adjacent[1]] += 1
     return flash_count
