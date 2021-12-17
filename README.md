@@ -118,3 +118,19 @@ Then it was just a bunch of if statements to check for the risk level of the gri
 For part 2 I basically just wrote a C++ version of my Python solution.
 ![Day 9 Map Basins](https://github.com/JWaters02/AoC-2021/blob/7caede8628764b3a88c70c000a3a9a6829256f93/BP%20Solutions/Day9-MapBasins.png)
 ![Day 9 DFS](https://github.com/JWaters02/AoC-2021/blob/7caede8628764b3a88c70c000a3a9a6829256f93/BP%20Solutions/Day9-DFS.png)
+### Day 10
+![Day 10 Main](https://github.com/JWaters02/AoC-2021/blob/112138739c685fd4f1c82d00af189840538deffd/BP%20Solutions/Day10-Main.png)
+![Day 10 Part 1](https://github.com/JWaters02/AoC-2021/blob/112138739c685fd4f1c82d00af189840538deffd/BP%20Solutions/Day10-P1.png)
+![Day 10 Part 2](https://github.com/JWaters02/AoC-2021/blob/112138739c685fd4f1c82d00af189840538deffd/BP%20Solutions/Day10-P2.png)
+I had to write an Int64 version of my insertion sort function from Day 7.
+![Day 10 Sort](https://github.com/JWaters02/AoC-2021/blob/112138739c685fd4f1c82d00af189840538deffd/BP%20Solutions/Day10-Sort.png)
+### Day 11
+This was *really* hard to debug! At one point I was getting an error that wouldn't *crash* the program, but rather put it into limbo - the program was trying to access some really high index numbers for an array of size 3. Turns out I wasn't creating the original grid correctly.
+![Day 11 Main](https://github.com/JWaters02/AoC-2021/blob/112138739c685fd4f1c82d00af189840538deffd/BP%20Solutions/Day11-Main.png)
+I'll show each step function first, then the two parts, as they use the same step functions.
+![Day 11 Step 1](https://github.com/JWaters02/AoC-2021/blob/112138739c685fd4f1c82d00af189840538deffd/BP%20Solutions/Day11-Step1.png)
+![Day 11 Step 2](https://github.com/JWaters02/AoC-2021/blob/112138739c685fd4f1c82d00af189840538deffd/BP%20Solutions/Day11-Step2.png)
+![Day 11 Step 3](https://github.com/JWaters02/AoC-2021/blob/112138739c685fd4f1c82d00af189840538deffd/BP%20Solutions/Day11-Step3.png)
+![Day 11 Get Adjacent Tiles](https://github.com/JWaters02/AoC-2021/blob/112138739c685fd4f1c82d00af189840538deffd/BP%20Solutions/Day11-GetAdjacentTiles.png)
+![Day 11 Part 1](https://github.com/JWaters02/AoC-2021/blob/112138739c685fd4f1c82d00af189840538deffd/BP%20Solutions/Day11-Part1.png)
+![Day 11 Part 2](https://github.com/JWaters02/AoC-2021/blob/112138739c685fd4f1c82d00af189840538deffd/BP%20Solutions/Day11-Part2.png)
