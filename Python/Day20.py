@@ -33,10 +33,8 @@ def part1(iea, pixels):
 
 def part2(iea, pixels):
     for i in range(50):
-        if i % 2 == 1:
-            pixels = enhance(iea, pixels, True)
-        else:
-            pixels = enhance(iea, pixels, False)
+        if i % 2 == 1: pixels = enhance(iea, pixels, True)
+        else: pixels = enhance(iea, pixels, False)
     return len(pixels)
 
 def main():
@@ -47,8 +45,7 @@ def main():
     pixels = set()
     for y, row in enumerate(image):
         for x, cell in enumerate(row):
-            if cell == '#':
-                pixels.add((x, y))
+            if cell == '#': pixels.add((x, y))
     
     print("Part 1:", part1(iea, pixels))
     print("Part 2:", part2(iea, pixels))

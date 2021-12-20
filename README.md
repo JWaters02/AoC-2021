@@ -23,9 +23,9 @@ Day | Part 1 Time | Part 2 Time (Accumulated) | Overall Execution Time (s) | Glo
 [Day 15](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day15.py) | 03:43:19 | 03:51:19 | 5.765 | 6729
 [Day 16](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day16.py) | 10:01:36 | 10:07:11 | 0.004 | 10935
 [Day 17](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day17.py) | 09:58:11 | 11:39:48 | 0.077 | 15199
-Day 18 |  |  |  | 
+[Day 18](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day17.py) | >24h[^6] | >24h | 0.832 | 16901
 Day 19 |  |  |  | 
-[Day 20](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day20.py) | 04:24:44 | 04:25:51 | 4.000 | 5884
+[Day 20](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day20.py) | 04:24:44[^7] | 04:25:51 | 4.000 | 5884
 Day 21 |  |  |  | 
 Day 22 |  |  |  | 
 Day 23 |  |  |  | 
@@ -37,6 +37,8 @@ Day 25 |  |  |  |
 [^3]: I woke up 7 hours 30 minutes late. It was worth it though. It was the best night's sleep I've had since the 31st of November!
 [^4]: I actually could tell what part 2 was going to be, so I predicted it before I submitted my part 1 solution, so that I could try and get like a 2 second delta. But like an absolute idiot I got the solution in the debugger output so when I needed it I was panicking because I couldn't find it and I had messed about in the code for a bit in between. So my delta ended up being just over 2 minutes... 🤦‍♂️
 [^5]: I woke up with a cold, which then lasted all the way up until Day 18. So I was prioritising sleep over this :)
+[^6]: I "cheated" a little bit today by allowing myself to use permutations and reduce from itertools and functools respectively, but I'm still happy about it - I did this on Day 20!
+[^7]: Yay finally! The first day since getting a cold that I could stay awake for long enough (I woke up at 8am) without my eyes watering or coughing my lungs out! Still kinda sick though, so I'm going straight back to sleep. Hopefully I'll feel even better tomorrow.
 
 ## Blueprint Solutions
 My goal with these blueprint solutions is that I want to try and match them to the Python solutions I write first. If I find a better way of doing things, I update it in the Python solution first, and then update the blueprint solution. This is partially because I find it difficult to write BP if I don't have code to follow along with. Building upon this, it makes debugging the BP solution much easier since I can debug the Python solution as a reference. The only times this does not hold directly true is when I use a datastructure or library that does not exist in BP and I have to recreate with something my own, for example a defaultdict or Counter from collections.
