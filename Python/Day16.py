@@ -14,18 +14,12 @@ class Packet():
         self.get_value()
 
     def get_value(self):
-        if self.check_type() == 'literal':
+        if self.type == '100': # 4
             self.loop_literal()
-        elif self.check_type() == 'operator':
+        else:
             self.loop_operator()
         self.total_bit_length = self.index - self.start_index
         self.bin_str = self.bin_str[self.start_index:self.index]
-
-    def check_type(self):
-        if self.type == '100': # 4
-            return 'literal'
-        else:
-            return 'operator'
 
     def check_length_id(self):
         if self.bin_str[self.index] == '0':

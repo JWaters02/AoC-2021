@@ -19,13 +19,13 @@ Day | Part 1 Time | Part 2 Time (Accumulated) | Overall Execution Time (s) | Glo
 [Day 11](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day11.py) | 02:55:92[^2] | 03:09:17 | 0.040 | 10232
 [Day 12](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day12.py) | 08:14:18[^3] | 08:56:02 | 0.450 | 17522
 [Day 13](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day13.py) | 00:39:36 | 00:41:50[^4] | 0.004 | 3420
-[Day 14](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day14.py) | 07:22:06[^5] | - | - | -
-[Day 15](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day15.py) | 03:43:19[^6] | 03:51:19 | 5.765 | 6729
+[Day 14](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day14.py) | 07:22:06[^5] | >24h | 0.011 | 36937
+[Day 15](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day15.py) | 03:43:19 | 03:51:19 | 5.765 | 6729
 [Day 16](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day16.py) | 10:01:36 | 10:07:11 | 0.004 | 10935
-Day 17 |  |  |  | 
+[Day 17](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day17.py) | 09:58:11 | 11:39:48 | 0.077 | 15199
 Day 18 |  |  |  | 
 Day 19 |  |  |  | 
-Day 20 |  |  |  | 
+[Day 20](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day20.py) | 04:24:44 | 04:25:51 | 4.000 | 5884
 Day 21 |  |  |  | 
 Day 22 |  |  |  | 
 Day 23 |  |  |  | 
@@ -36,8 +36,7 @@ Day 25 |  |  |  |
 [^2]: I woke up 2 hours 10 minutes late.
 [^3]: I woke up 7 hours 30 minutes late. It was worth it though. It was the best night's sleep I've had since the 31st of November!
 [^4]: I actually could tell what part 2 was going to be, so I predicted it before I submitted my part 1 solution, so that I could try and get like a 2 second delta. But like an absolute idiot I got the solution in the debugger output so when I needed it I was panicking because I couldn't find it and I had messed about in the code for a bit in between. So my delta ended up being just over 2 minutes... 🤦‍♂️
-[^5]: I woke up 6 hours late.
-[^6]: I woke up 3 hours late.
+[^5]: I woke up with a cold, which then lasted all the way up until Day 18. So I was prioritising sleep over this :)
 
 ## Blueprint Solutions
 My goal with these blueprint solutions is that I want to try and match them to the Python solutions I write first. If I find a better way of doing things, I update it in the Python solution first, and then update the blueprint solution. This is partially because I find it difficult to write BP if I don't have code to follow along with. Building upon this, it makes debugging the BP solution much easier since I can debug the Python solution as a reference. The only times this does not hold directly true is when I use a datastructure or library that does not exist in BP and I have to recreate with something my own, for example a defaultdict or Counter from collections.
@@ -119,6 +118,7 @@ For part 2 I basically just wrote a C++ version of my Python solution.
 ![Day 9 Map Basins](https://github.com/JWaters02/AoC-2021/blob/7caede8628764b3a88c70c000a3a9a6829256f93/BP%20Solutions/Day9-MapBasins.png)
 ![Day 9 DFS](https://github.com/JWaters02/AoC-2021/blob/7caede8628764b3a88c70c000a3a9a6829256f93/BP%20Solutions/Day9-DFS.png)
 ### Day 10
+I kid you not, I was able to complete both parts first try (i.e. making them and working as intended instantly). Felt so good!
 ![Day 10 Main](https://github.com/JWaters02/AoC-2021/blob/112138739c685fd4f1c82d00af189840538deffd/BP%20Solutions/Day10-Main.png)
 Part 1.
 ![Day 10 Part 1](https://github.com/JWaters02/AoC-2021/blob/112138739c685fd4f1c82d00af189840538deffd/BP%20Solutions/Day10-P1.png)
