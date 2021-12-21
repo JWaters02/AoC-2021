@@ -36,7 +36,7 @@ Day 25 |  |  |  |
 [^2]: I woke up 2 hours 10 minutes late.
 [^3]: I woke up 7 hours 30 minutes late. It was worth it though. It was the best night's sleep I've had since the 31st of November!
 [^4]: I actually could tell what part 2 was going to be, so I predicted it before I submitted my part 1 solution, so that I could try and get like a 2 second delta. But like an absolute idiot I got the solution in the debugger output so when I needed it I was panicking because I couldn't find it and I had messed about in the code for a bit in between. So my delta ended up being just over 2 minutes... 🤦‍♂️
-[^5]: I woke up with a cold, which then lasted all the way up until Day 18. So I was prioritising sleep over this :)
+[^5]: I woke up with a cold, which then lasted all the way up until Day 20. So I was prioritising sleep over this :)
 [^6]: I "cheated" a little bit today by allowing myself to use permutations and reduce from itertools and functools respectively, but I'm still happy about it - I did this on Day 20!
 [^7]: Yay finally! The first day since getting a cold that I could stay awake for long enough (I woke up at 8am) without my eyes watering or coughing my lungs out! Still kinda sick though, so I'm going straight back to sleep. Hopefully I'll feel even better tomorrow.
 
