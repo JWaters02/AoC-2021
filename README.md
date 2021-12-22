@@ -26,7 +26,7 @@ Day | Part 1 Time | Part 2 Time (Accumulated) | Overall Execution Time (s) | Glo
 [Day 18](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day17.py) | >24h[^6] | >24h | 0.832 | 16901
 Day 19 |  |  |  | 
 [Day 20](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day20.py) | 04:24:44[^7] | 04:25:51 | 4.000 | 5884
-[Day 21](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day21.py) | 09:08:19 |  |  | 
+[Day 21](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day21.py) | 09:08:19 | >24h | 0.434 | 14314
 [Day 22](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day22.py) | 05:29:29 | 06:59:41 | 14.909 | 3755 
 Day 23 |  |  |  | 
 Day 24 |  |  |  | 
@@ -144,3 +144,6 @@ Part 1.
 ![Day 11 Part 1](https://github.com/JWaters02/AoC-2021/blob/112138739c685fd4f1c82d00af189840538deffd/BP%20Solutions/Day11-Part1.png)
 Part 2.
 ![Day 11 Part 2](https://github.com/JWaters02/AoC-2021/blob/112138739c685fd4f1c82d00af189840538deffd/BP%20Solutions/Day11-Part2.png)
+<br><br>
+
+*I haven't given up... just no time to work on these solutions as they are very complex :)*
