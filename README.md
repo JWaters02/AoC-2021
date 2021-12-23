@@ -23,12 +23,12 @@ Day | Part 1 Time | Part 2 Time (Accumulated) | Overall Execution Time (s) | Glo
 [Day 15](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day15.py) | 03:43:19 | 03:51:19 | 5.765 | 6729
 [Day 16](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day16.py) | 10:01:36 | 10:07:11 | 0.004 | 10935
 [Day 17](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day17.py) | 09:58:11 | 11:39:48 | 0.077 | 15199
-[Day 18](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day17.py) | >24h[^6] | >24h | 0.832 | 16901
-Day 19 |  |  |  | 
+[Day 18](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day18.py) | >24h[^6] | >24h | 0.832 | 16901
+[Day 19](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day19.py) | >24h | >24h | 7.504 | 12519
 [Day 20](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day20.py) | 04:24:44[^7] | 04:25:51 | 4.000 | 5884
 [Day 21](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day21.py) | 09:08:19 | >24h | 0.434 | 14314
 [Day 22](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day22.py) | 05:29:29 | 06:59:41 | 14.909 | 3755 
-Day 23 |  |  |  | 
+[Day 23](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day23.py) | 05:56:12[^8] | 07:35:40 | 6.388 | 2754
 Day 24 |  |  |  | 
 Day 25 |  |  |  |  
 
@@ -39,6 +39,7 @@ Day 25 |  |  |  |
 [^5]: I woke up with a cold, which then lasted all the way up until Day 20. So I was prioritising sleep over this :)
 [^6]: I "cheated" a little bit today by allowing myself to use permutations and reduce from itertools and functools respectively, but I'm still happy about it - I did this on Day 20!
 [^7]: Yay finally! The first day since getting a cold that I could stay awake for long enough (I woke up at 8am) without my eyes watering or coughing my lungs out! Still kinda sick though, so I'm going straight back to sleep. Hopefully I'll feel even better tomorrow.
+[^8]: I solved part 1 and 2 by hand first, then went on to write an actual solution for part 2 because, well, I was interested in how the problem should actually be solved. I should note that I did ask for tips on where to look for the coded solution first - because I honestly had no idea.
 
 ## Blueprint Solutions
 My goal with these blueprint solutions is that I want to try and match them to the Python solutions I write first. If I find a better way of doing things, I update it in the Python solution first, and then update the blueprint solution. This is partially because I find it difficult to write BP if I don't have code to follow along with. Building upon this, it makes debugging the BP solution much easier since I can debug the Python solution as a reference. The only times this does not hold directly true is when I use a datastructure or library that does not exist in BP and I have to recreate with something my own, for example a defaultdict or Counter from collections.
