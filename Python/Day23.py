@@ -86,7 +86,8 @@ def part2(burrows, startings):
 def main():
     burrows = tuple(None for _ in range(len(room_spots) + len(hallway_spots)))
     print(part1(burrows, (("D", "C"), ("B", "A"), ("A", "D"), ("C", "B"))))
-    print(part2(burrows, (("D", "D", "D", "C"), ("B", "C", "B", "A"), ("A", "B", "A", "D"), ("C", "A", "C", "B"))))
+    # print(part2(burrows, (("D", "D", "D", "C"), ("B", "C", "B", "A"), ("A", "B", "A", "D"), ("C", "A", "C", "B"))))
+    print(part2(burrows, (("B", "D", "D", "D"), ("B", "C", "B", "A"), ("C", "B", "A", "A"), ("D", "A", "C", "C"))))
 
 if __name__ == "__main__":
     start_time = time.time()

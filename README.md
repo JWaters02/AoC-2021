@@ -29,7 +29,7 @@ Day | Part 1 Time | Part 2 Time (Accumulated) | Overall Execution Time (s) | Glo
 [Day 21](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day21.py) | 09:08:19 | >24h | 0.434 | 14314
 [Day 22](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day22.py) | 05:29:29 | 06:59:41 | 14.909 | 3755 
 [Day 23](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day23.py) | 05:56:12[^8] | 07:35:40 | 6.388 | 2754
-Day 24 |  |  |  | 
+[Day 24](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day24.py) | 13:23:02 | 13:25:57 | 0.001 | 4263
 Day 25 |  |  |  |  
 
 [^1]: I woke up 35 minutes late.
@@ -147,4 +147,4 @@ Part 2.
 ![Day 11 Part 2](https://github.com/JWaters02/AoC-2021/blob/112138739c685fd4f1c82d00af189840538deffd/BP%20Solutions/Day11-Part2.png)
 <br><br>
 
-*I haven't given up... just no time to work on these solutions as they are very complex :)*
+*I haven't given up (edit - ok maybe I have)... just no time to work on these solutions as they are very complex :)*
