@@ -2,6 +2,7 @@
 
 Repository for my solutions to Advent of Code 2021. 
 
+## Python Solutions
 I calculated the overall execution time from each part 1 and part 2 solutions (given my own inputs) alongside my time completion of puzzles (from 5am UTC start time) and my global rank for them:
 
 Day | Part 1 Time | Part 2 Time (Accumulated) | Overall Execution Time (s) | Global Rank
@@ -27,10 +28,10 @@ Day | Part 1 Time | Part 2 Time (Accumulated) | Overall Execution Time (s) | Glo
 [Day 19](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day19.py) | >24h | >24h | 7.504 | 12519
 [Day 20](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day20.py) | 04:24:44[^7] | 04:25:51 | 4.000 | 5884
 [Day 21](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day21.py) | 09:08:19 | >24h | 0.434 | 14314
-[Day 22](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day22.py) | 05:29:29 | 06:59:41 | 14.909 | 3755 
+[Day 22](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day22.py) | 05:29:29 | 06:59:41 | 14.98 | 3755 
 [Day 23](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day23.py) | 05:56:12[^8] | 07:35:40 | 6.388 | 2754
 [Day 24](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day24.py) | 13:23:02 | 13:25:57 | 0.001 | 4263
-Day 25 |  |  |  |  
+[Day 25](https://github.com/JWaters02/AoC-2021/blob/main/Python/Day25.py) | 00:59:08 | 00:59:29 | 4.584 | 1836
 
 [^1]: I woke up 35 minutes late.
 [^2]: I woke up 2 hours 10 minutes late.
